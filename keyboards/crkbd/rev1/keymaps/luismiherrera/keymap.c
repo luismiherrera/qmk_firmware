@@ -17,9 +17,11 @@ enum luismi_layers {
 //Combos
 const uint16_t PROGMEM combo1[] = {LCTL_T(KC_D), LSFT_T(KC_F), COMBO_END};
 const uint16_t PROGMEM combo2[] = {LSFT_T(KC_J), LCTL_T(KC_K), COMBO_END};
+const uint16_t PROGMEM combo3[] = {LSFT_T(KC_F), LSFT_T(KC_J), COMBO_END};
 combo_t key_combos[] = {
     COMBO(combo1, KC_LPRN),
     COMBO(combo2, KC_RPRN),
+    COMBO(combo3, KC_CAPS),
 };
 //End of Combos
 
@@ -40,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //DEFAULT LAYER
     [DEF] = LAYOUT_split_3x6_3(
   //,------------------------------------------------------------------------------------.         ,----------------------------------------------------------------------------------------.
-     KC_NO,    KC_Q,           KC_W,          KC_E,          KC_R,          KC_T,                    KC_Y,           KC_U,          KC_I,          KC_O,          KC_P,             KC_NO,
+     KC_ESC,   KC_Q,           KC_W,          KC_E,          KC_R,          KC_T,                    KC_Y,           KC_U,          KC_I,          KC_O,          KC_P,             KC_BSPC,
   //|--------+---------------+--------------+--------------+--------------+--------------|         |---------------+--------------+--------------+--------------+-----------------+----------|
      KC_RALT,  KC_A,           LALT_T(KC_S),  LCTL_T(KC_D),  LSFT_T(KC_F),  KC_G,                    KC_H,           LSFT_T(KC_J),  LCTL_T(KC_K),  LALT_T(KC_L),  KC_QUOT,          KC_NO, 
   //|--------+---------------+--------------+--------------+--------------+--------------|         |---------------+--------------+--------------+--------------+-----------------+----------|
