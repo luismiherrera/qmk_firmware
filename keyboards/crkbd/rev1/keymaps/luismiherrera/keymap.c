@@ -86,11 +86,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      //SYMBOLS LAYER
     [SYM] = LAYOUT_split_3x6_3(
   //,------------------------------------------------------------------------------------.         ,----------------------------------------------------------------------------------------.
-     KC_TRNS,  UK_GRV,         KC_AMPR,       KC_ASTR,       KC_LBRC,       KC_RBRC,                 KC_NO,          KC_NO,         KC_NO,         KC_NO,         KC_NO,            KC_TRNS, 
+     KC_TRNS,  UK_GRV,         KC_AMPR,       KC_LBRC,       KC_RBRC,       KC_PERC,                 KC_NO,          KC_NO,         KC_NO,         KC_NO,         KC_NO,            KC_TRNS, 
   //|--------+---------------+--------------+--------------+--------------+--------------|         |---------------+--------------+--------------+--------------+-----------------+----------|
-       KC_NO,  KC_EXLM,        UK_DQUO,       KC_SCLN,       KC_COLN,       UK_HASH,                 KC_NO,          KC_LSFT,       KC_LCTL,       KC_LALT,       KC_NO,            KC_NO, 
+       KC_NO,  KC_EXLM,        UK_DQUO,       KC_SCLN,       KC_COLN,       KC_ASTR,                 KC_NO,          KC_LSFT,       KC_LCTL,       KC_LALT,       KC_NO,            KC_NO, 
   //|--------+---------------+--------------+--------------+--------------+--------------|         |---------------+--------------+--------------+--------------+-----------------+----------|
-       KC_NO,  UK_BSLS,        KC_DLR,        KC_LPRN,       KC_RPRN,       KC_PERC,                 U_NTIL,         TT(NAV),       KC_NO,         KC_NO,         KC_LGUI,          KC_NO, 
+       KC_NO,  UK_BSLS,        KC_DLR,        KC_LCBR,       KC_RCBR,       UK_HASH,                 U_NTIL,         TT(NAV),       KC_NO,         KC_NO,         KC_LGUI,          KC_NO, 
   //|--------+---------------+--------------+--------------+--------------+--------------|         |---------------+--------------+--------------+--------------+-----------------+----------|
                                               KC_NO,         KC_ESC,        KC_DEL,                  KC_NO,          KC_TRNS,       KC_NO   
                                          //`---------------+--------------+--------------'         `---------------+--------------+--------'
