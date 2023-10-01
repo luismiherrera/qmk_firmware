@@ -3,6 +3,8 @@
 #include "keymap_uk.h"
 #include "sendstring_uk.h"
 
+char wpm_str[10];
+
 enum luismi_layers {
      DEF,
      MAYA,
@@ -171,12 +173,12 @@ static void oled_render_layer_state(void) {
     // Host Keyboard Layer Status
     //oled_write_P(PSTR("Layer: "), false);
 
-    switch (get_highest_layer(layer_state)) {
+    switch (get_highest_layer(layer_state|default_layer_state)) {
           case DEF:
                oled_write_P(PSTR(" DEF \n"), false);
                break;
           case MAYA:
-               oled_write_P(PSTR("MAYA\n"), false);
+               oled_write_P(PSTR("MAYA \n"), false);
                break;
           case NUM:
                oled_write_P(PSTR(" NUM \n"), false);
@@ -206,7 +208,9 @@ static void oled_render_layer_state(void) {
     // Host Keyboard LED Status
     led_t led_state = host_keyboard_led_state();
     oled_write_P(led_state.caps_lock ? PSTR(" CAP \n") : PSTR("     \n"), false);
-    oled_write_P(PSTR("-----\n"), false);    
+    oled_write_P(PSTR("-----\n"), false);
+    sprintf(wpm_str, "wpm: %03d", get_current_wpm());
+    oled_write(wpm_str, false);    
 
 }
 
