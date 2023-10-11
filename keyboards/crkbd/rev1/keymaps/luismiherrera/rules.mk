@@ -4,4 +4,4 @@ LTO_ENABLE      	= yes
 SPLIT_KEYBOARD   	= yes
 COMBO_ENABLE     	= yes
 UNICODEMAP_ENABLE 	= yes
-WPM_ENABLE			= yes 
+WPM_ENABLE			= no
