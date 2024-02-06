@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [SYM] = LAYOUT(
  
     UK_GRV,         KC_AMPR,       KC_LBRC,       KC_RBRC,       KC_PERC,             LCTL(KC_V),      LCTL(KC_C),       LCTL(KC_X),    LCTL(KC_Z),      LCTL(KC_Y),      
-    KC_EXLM,        UK_DQUO,       KC_SCLN,       KC_COLN,       KC_ASTR,             KC_LEFT,         LSFT_T(KC_DOWN),  LCTL_T(KC_UP), LALT_T(KC_RGHT), U_NTIL,         
+    KC_EXLM,        UK_DQUO,       KC_COLN,       KC_SCLN,       KC_ASTR,             KC_LEFT,         LSFT_T(KC_DOWN),  LCTL_T(KC_UP), LALT_T(KC_RGHT), U_NTIL,         
     UK_BSLS,        KC_DLR,        KC_LCBR,       KC_RCBR,       UK_HASH,             KC_HOME,         KC_PGDN,          KC_PGUP,       KC_END,          LGUI_T(KC_NO), 
                                                   MO(MOUSE),     KC_DEL,              KC_NO,           KC_TRNS
   ),
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [NAV] = LAYOUT(
  
     UK_GRV,           KC_AMPR,           KC_LBRC,          KC_RBRC,          KC_PERC,             LCTL(KC_V),      LCTL(KC_C),       LCTL(KC_X),    LCTL(KC_Z),      LCTL(KC_Y),      
-    KC_EXLM,          LALT_T(UK_DQUO),   LCTL_T(KC_SCLN),  LSFT_T(KC_COLN),  KC_ASTR,             KC_LEFT,         KC_DOWN,          KC_UP,         KC_RGHT,         U_NTIL,         
+    KC_EXLM,          LALT_T(UK_DQUO),   LCTL_T(KC_COLN),  LSFT_T(KC_SCLN),  KC_ASTR,             KC_LEFT,         KC_DOWN,          KC_UP,         KC_RGHT,         U_NTIL,         
     LGUI_T(UK_BSLS),  KC_DLR,            KC_LCBR,          KC_RCBR,          UK_HASH,             KC_HOME,         KC_PGDN,          KC_PGUP,       KC_END,          KC_NO, 
                                                            KC_TRNS,          KC_NO,               KC_ENTER,        MO(MOUSE)
   ),
