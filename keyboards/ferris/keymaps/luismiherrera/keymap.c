@@ -3,6 +3,7 @@
 #include QMK_KEYBOARD_H
 #include "keymap_uk.h"
 #include "sendstring_uk.h"
+#include "raw_hid.h"
 
 enum luismi_layers {
      DEF,
@@ -36,6 +37,21 @@ combo_t key_combos[] = {
     COMBO(combo8, KC_BSPC),
 };
 //End of Combos
+
+void send_layer_status(void) {
+    uint8_t data[32] = {0}; // HID report must be 32 bytes
+    if (layer_state_is(MAYA)) {
+        data[0] = 1; // Indicate Maya layer is active
+    } else {
+        data[0] = 0; // Indicate Maya layer is inactive
+    }
+    raw_hid_send(data, 32);
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    send_layer_status();
+    return state;
+}
 
 //UNICODES
 enum unicode_names {

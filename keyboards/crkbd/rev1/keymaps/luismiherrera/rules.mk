@@ -5,3 +5,4 @@ SPLIT_KEYBOARD   	= yes
 COMBO_ENABLE     	= yes
 UNICODEMAP_ENABLE 	= yes
 WPM_ENABLE			= no
+RAW_ENABLE          = yes
