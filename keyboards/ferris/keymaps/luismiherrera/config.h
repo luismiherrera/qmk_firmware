@@ -19,20 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-
-//#define USE_MATRIX_I2C
+#define INIT_EE_HANDS_LEFT
+//#define INIT_EE_HANDS_RIGHT
 
 /* Select hand configuration */
 
-//#define MASTER_LEFT
-//#define MASTER_RIGHT
 #define EE_HANDS
 
-//#define QUICK_TAP_TERM 0
-//#define TAPPING_TERM 100
-#define RP2040_FLASH_GD25Q64CS
-
-#define TAPPING_TOGGLE 2
+#define QUICK_TAP_TERM 0
+#define RP2040_FLASH_GD25Q64CS // board-specific: keep only if it was in your original working config
 
 #define UNICODE_SELECTED_MODES UNICODE_MODE_WINCOMPOSE
 
